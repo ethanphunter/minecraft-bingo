@@ -9,6 +9,7 @@ import org.bukkit.scoreboard.DisplaySlot;
 import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
+import org.bukkit.scoreboard.Criteria;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +50,7 @@ public class GameBoard {
         this.scoreboard = Bukkit.getScoreboardManager().getNewScoreboard();
         this.objective = this.scoreboard.registerNewObjective(
                 String.valueOf(lastObjectiveId++),
-                "dummy",
+                Criteria.DUMMY,
                 "scoreboard"
         );
         this.objective.setDisplaySlot(DisplaySlot.SIDEBAR);
