@@ -19,11 +19,6 @@ public class TeamManager {
     public static final int MAX_TEAMS = 8;
 
     /**
-     * The game instance
-     */
-    private final Game game;
-
-    /**
      * The list of possible teams
      */
     private final List<PlayerTeam> teams;
@@ -36,8 +31,7 @@ public class TeamManager {
      */
     private final Team spectatorTeam;
 
-    public TeamManager(Game game) {
-        this.game = game;
+    public TeamManager() {
         this.teams = new ArrayList<>();
         this.activeTeams = new ArrayList<>();
 

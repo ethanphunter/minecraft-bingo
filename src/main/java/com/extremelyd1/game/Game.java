@@ -142,7 +142,7 @@ public class Game {
         worldManager = new WorldManager(this);
 
         gameBoardManager = new GameBoardManager(this);
-        teamManager = new TeamManager(this);
+        teamManager = new TeamManager();
 
         bingoCardItemFactory = new BingoCardItemFactory(this);
         bingoItemMaterials = new BingoItemMaterials(this);
